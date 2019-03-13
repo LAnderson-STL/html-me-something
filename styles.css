@@ -1,0 +1,294 @@
+/*default font and background for entire body*/
+
+body {
+    background-image: url("images/spiration-light.png");
+    font-family: 'Abel', sans-serif;
+}
+
+/*styling for all links*/
+
+a:link {
+    color:black; 
+    background-color: transparent; 
+    text-decoration: none;
+  }
+  
+a:visited  {
+    color:black; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+
+a:hover {
+    color:#e14700; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+  
+
+/*header*/
+
+.navbar {
+    font-size: 20px;
+}
+
+
+.carousel-img {
+    width: 100%;
+}
+
+.carousel-inner {
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px rgb(39, 37, 37);
+}
+
+.jumbo-p {
+    color: whitesmoke;
+    font-size: 26px;
+    margin-top: -5%; 
+    padding-left: 25%;  
+}
+
+.jumbotron {
+    padding-bottom: -5%;
+    
+}
+
+header {
+    margin-bottom: -2%
+}
+
+
+
+/*article section*/
+
+.article-text {
+    padding: 3% 6% 3% 6%;
+    text-align: justify;
+    font-size: 20px;
+    color:whitesmoke;
+    border-radius: 10px;
+    background-color:rgb(32, 94, 73, .6);
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: -3%;
+}
+
+.explore {
+    
+    display: block;
+    width: 80%;
+ 
+}
+
+
+/*main*/
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.main-column {
+    padding-top: 5%;
+}
+
+.main-img { 
+    width: 75%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #ccc;
+    margin: auto;    
+    display: block;
+}
+
+.main-p {
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+
+
+/*photo album pages (divng, hiking, family*/
+
+.back-icon{
+    text-align: center;
+    
+}
+
+.photo-album {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #ccc;
+    margin: auto;    
+    display: block;
+    margin-top: 10%;
+}
+
+
+/*my city (stl) section*/
+
+.mycity {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.map {
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px rgb(39, 37, 37);
+    margin: auto;    
+    display: block;
+    height: 350px;
+    width: 400px;
+    margin-bottom: 5%;
+}
+
+.stl-section {
+    text-align: justify;
+    font-size: 20px;
+    color:rgb(43, 38, 38);
+    border-radius: 15px;
+    padding: 3% 5% 3% 5%;
+    margin-top: 5%;
+
+}
+
+.map-section {
+    text-align: justify;
+    font-size: 20px;
+    color:whitesmoke;
+    border-radius: 10px;
+    background-color:rgb(32, 94, 73, .6);
+    padding: 3% 5% 1% 5%;
+    margin-top: 5%; 
+    margin-left: .1%;
+    margin-right: .1%;
+}
+
+.light-gray-bckgrnd {
+    background-color:rgba(134, 133, 133, 0.445);
+    border-radius: 10px;
+}
+
+.stl-h4 {
+    font-size: 26px;
+    text-align: center;
+    color: #e14700;
+}
+
+.stl-img {
+    border-radius: 10px;
+    box-shadow: 7px 7px 3px rgba(73, 71, 71);
+    margin: auto;
+    display: block;
+    width: 85%;
+}
+
+.caption {
+    text-align: center;
+    padding-top: 2%;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    padding: 6px 20px 6px 20px;
+    font-size: 18px;
+}
+
+
+/*footer*/
+  
+.footer {
+    padding-top: 3%;
+}
+  
+
+.footer-nav {
+    margin-top: -5%;
+}
+
+.footer p {
+    margin-top: -1%;
+}
+
+
+/*hide alt nav bar on larger screens*/
+
+@media only screen and (min-width: 769px) {
+    .navbar-smallscreen {
+        display: none;
+    }
+}
+
+
+
+/*special styling for tablets and phones*/
+
+@media only screen and (max-width: 768px) {
+    /* For mobile: */
+    
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .stl-img{
+        display: block;
+        margin: auto auto 20% auto; 
+    }
+    
+    .caption {
+        margin-top: -15%;
+        font-size: 14px;
+    }
+
+    .map {
+        width: 275px;
+        height: 250px;
+        margin-bottom: 10%;
+        margin-left: -10%;
+    }
+
+    p, .main-p, .article-text, .nav-item {
+        font-size: 16px;
+    }
+
+   .jumbotron p {
+       font-size: 18px;
+       margin-left: -7%;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin-top: 5%;
+    }
+
+    .mycity {
+        margin-top: 5%;
+    }
+
+    .navbar-largescreen {
+        display: none;
+    }
+
+    .navbar-smallscreen {
+        margin-top: -10%;
+    }  
+    
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+
+   
+
+  
