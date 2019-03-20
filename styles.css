@@ -107,7 +107,6 @@ h2 {
     text-align: justify;
     padding-left: 8%;
     padding-right: 8%;
-
 }
 
 
@@ -219,7 +218,7 @@ h2 {
 }
 
 
-/*hide alt nav bar on larger screens*/
+/*hide alt navbar on larger screens*/
 
 @media only screen and (min-width: 769px) {
     .navbar-smallscreen {
