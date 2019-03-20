@@ -144,6 +144,7 @@ h2 {
     height: 350px;
     width: 400px;
     margin-bottom: 5%;
+    
 }
 
 .stl-section {
@@ -252,7 +253,6 @@ h2 {
         width: 275px;
         height: 250px;
         margin-bottom: 10%;
-        margin-left: -10%;
     }
 
     p, .main-p, .article-text, .nav-item {
