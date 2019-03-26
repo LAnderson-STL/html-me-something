@@ -5,7 +5,10 @@ body {
     font-family: 'Abel', sans-serif;
 }
 
-/*styling for all links*/
+
+
+
+/*styling for all links (except mobile nav links)*/
 
 a:link {
     color:black; 
@@ -27,12 +30,62 @@ a:hover {
 }
   
 
-/*header*/
+
+
+/*large screen navbar*/
 
 .navbar {
     font-size: 20px;
 }
 
+
+
+
+
+/*mobile navbar*/
+
+.mobile-nav {
+    overflow: hidden;
+    background-color: lightgrey;
+    position: relative;
+  }
+  
+  
+  .mobile-nav #pageLinks {
+    display: none;
+  }
+  
+  /* styling for mobile nav links only */
+  .mobile-nav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+  }
+
+  .mobile-nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  /* hamburger dropdown menu */
+  .mobile-nav a.icon {
+    background:lightgray;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+  }
+  
+ 
+ 
+
+
+ 
+/*carousel*/
 
 .carousel-img {
     width: 100%;
@@ -55,13 +108,16 @@ a:hover {
     
 }
 
+
+/*adj bottom margin of header section*/
+
 header {
     margin-bottom: -2%
 }
 
 
 
-/*article section*/
+/*article section and explore img*/
 
 .article-text {
     padding: 3% 6% 3% 6%;
@@ -81,6 +137,8 @@ header {
     width: 80%;
  
 }
+
+
 
 
 /*main*/
@@ -110,6 +168,10 @@ h2 {
 }
 
 
+
+
+
+
 /*photo album pages (divng, hiking, family*/
 
 .back-icon{
@@ -125,6 +187,10 @@ h2 {
     display: block;
     margin-top: 10%;
 }
+
+
+
+
 
 
 /*my city (stl) section*/
@@ -202,6 +268,10 @@ h2 {
 }
 
 
+
+
+
+
 /*footer*/
   
 .footer {
@@ -211,6 +281,7 @@ h2 {
 
 .footer-nav {
     margin-top: -5%;
+
 }
 
 .footer p {
@@ -218,25 +289,25 @@ h2 {
 }
 
 
+
+
+
+
+
 /*hide alt navbar on larger screens*/
 
 @media only screen and (min-width: 769px) {
-    .navbar-smallscreen {
+    .mobile-nav {
         display: none;
     }
 }
 
 
 
-/*special styling for tablets and phones*/
+/*special styling for tablets and phones (mobile)*/
 
 @media only screen and (max-width: 768px) {
-    /* For mobile: */
     
-    .nav-item {
-        width: 100%;
-        text-align: center;
-    }
     
     .stl-img{
         display: block;
@@ -255,7 +326,7 @@ h2 {
     }
 
     p, .main-p, .article-text, .nav-item {
-        font-size: 16px;
+        font-size: 20px;
     }
 
    .jumbotron p {
@@ -278,6 +349,7 @@ h2 {
 
     .navbar-smallscreen {
         margin-top: -10%;
+        
     }  
     
     .navbar-nav {
@@ -287,6 +359,11 @@ h2 {
     .footer p {
         font-size: 14px;
     }
+
+    .footer-nav {
+        margin-top: -5%;
+        display: inline-block;
+        text-align: center;
 
    
 
