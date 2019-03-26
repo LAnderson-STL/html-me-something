@@ -1,3 +1,5 @@
+
+
 /*default font and background for entire body*/
 
 body {
@@ -32,7 +34,7 @@ a:hover {
 
 
 
-/*large screen navbar*/
+/*large screen navbar - hidden on mobile*/
 
 .navbar {
     font-size: 20px;
@@ -42,12 +44,13 @@ a:hover {
 
 
 
-/*mobile navbar*/
+/*mobile navbar - hidden on large screens*/
 
 .mobile-nav {
     overflow: hidden;
     background-color: lightgrey;
     position: relative;
+    
   }
   
   
